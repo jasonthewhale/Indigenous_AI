@@ -5,7 +5,7 @@ import openai
 
 
 openai.organization = "org-tlNrDekRRlExHL1gWb7oCHPD"
-openai.api_key = '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'
+openai.api_key = os.getenv('OPENAI_API_KEY')
 
 
 df = pd.read_csv('./datasets/indigenous_map.csv')
