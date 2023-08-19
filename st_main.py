@@ -10,7 +10,7 @@ import time
 
 st.set_page_config(
     page_title="Yaama!",
-    page_icon="🌏",
+    page_icon="🪢",
     initial_sidebar_state="expanded",
 )
 st.title("Indigenous Storyteller")
