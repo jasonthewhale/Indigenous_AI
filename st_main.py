@@ -98,7 +98,18 @@ else:
 generate = st.button("Generate")
 
 if generate:
-    language_index = get_language_index(st.session_state['cur_select'])
+    if not st.session_state['cur_click']:
+        df_language = get_language_df(st.session_state['cur_lang'])
+    df_info = pd.DataFrame({
+        'Language': df_language['Language'],
+        'Pronunciation': df_language['Pronunciation'],
+        'Introduction': df_language['Introduction'],
+        'Locations': df_language['Locations'],
+        'Synonyms': df_language['Synonyms'],
+        'Common words': df_language['Common words'],
+    }).reset_index(drop=True).transpose()
+    df_info = df_info.rename(columns={0: 'Document'})
+    reference.write(df_info)
 
     _, cent_col, _ = st.columns(3)
     with cent_col:
