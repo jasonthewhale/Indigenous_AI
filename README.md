@@ -22,7 +22,7 @@ The data input to the system includes language name, pronunciation, common words
 * To help indigenous people rediscover, embrace, and preserve their cultural identity
 * To advance AI capabilities in language comprehension, particularly less-documented indigenous languages
 
-**The website is already deployed in the following [link](https://indigenousai-junchen-you.streamlit.app/).**
+**The website is already deployed in the following [link](https://gov-hack-indigenous-ai.streamlit.app/).**
 
 ### Set Up
 
